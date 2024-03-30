@@ -4,9 +4,21 @@
       <div class="col-md-6">
         <div class="login-box">
           <h1>User Registration</h1>
-          <div class="alert alert-success" *ngIf="datasaved">
-            {{ message }}
+          <div *ngIf="datasaved">
+            <div
+              *ngIf="message === 'User Created Successfully'"
+              class="alert alert-success"
+            >
+              {{ message }}
+            </div>
+            <div
+              *ngIf="message !== 'User Created Successfully'"
+              class="alert alert-danger"
+            >
+              {{ message }}
+            </div>
           </div>
+
           <form (ngSubmit)="onSubmit()" [formGroup]="regForm">
             <div class="form-group form-row">
               <label class="col-md-3"
@@ -24,6 +36,7 @@
                   *ngIf="
                     regForm.get('Name')?.invalid && regForm.get('Name')?.touched
                   "
+                  style="color: red"
                 >
                   Please enter Your Name !!!
                 </span>
@@ -48,6 +61,7 @@
                     regForm.get('Email')?.invalid &&
                     regForm.get('Email')?.touched
                   "
+                  style="color: red"
                 >
                   Please enter Email !!!
                 </span>
@@ -72,6 +86,7 @@
                     regForm.get('Password')?.invalid &&
                     regForm.get('Password')?.touched
                   "
+                  style="color: red"
                 >
                   Please enter Password !!!
                 </span>

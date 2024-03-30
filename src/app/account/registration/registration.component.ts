@@ -41,9 +41,11 @@ export class RegistrationComponent implements OnInit {
 
   createUserAccount(userInfo: Accountinfo): void {
     this.accountService.createaccount(userInfo).subscribe(
-      () => {
+      (resResult) => {
+        // let resp = JSON.stringify(resResult);
         this.datasaved = true;
-        this.message = 'User Created Successfully';
+        this.message = (resResult as any).msg;
+        this.regForm.reset();
       },
       (error) => {
         console.error('Error creating user:', error);
