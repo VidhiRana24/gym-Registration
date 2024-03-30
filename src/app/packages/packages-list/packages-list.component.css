@@ -1,0 +1,29 @@
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: black;
+}
+.blog-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Add transition for transform property */
+}
+
+.blog-box:hover {
+  transform: translateY(-5px); /* Move the card up slightly on hover */
+}
+
+.blog-box img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-box .row {
+  align-items: center;
+}
+
+.blog-box .col-md-8 {
+  padding: 20px;
+}

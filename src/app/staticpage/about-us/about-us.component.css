@@ -1,0 +1,59 @@
+.future-goals-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.future-goals-container .future-goals-image {
+  flex: 0 0 auto; /* Don't grow or shrink */
+  width: 40%; /* Adjust width as needed */
+  margin-right: 20px; /* Add some space between image and text */
+  transition: transform 0.3s ease-in-out; /* Add transition for transform property */
+}
+
+.future-goals-container p {
+  flex: 1 1 auto; /* Grow as needed */
+  width: 60%; /* Adjust width as needed */
+  transition: opacity 0.3s ease-in-out; /* Add transition for opacity property */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .future-goals-container {
+    flex-direction: column;
+  }
+
+  .future-goals-container .future-goals-image,
+  .future-goals-container p {
+    width: 100%; /* Full width on smaller screens */
+    margin-right: 0; /* No margin on smaller screens */
+  }
+}
+
+/* Additional style for hover effect */
+.future-goals-container:hover .future-goals-image {
+  transform: scale(1.1); /* Scale up image on hover */
+}
+
+.future-goals-container:hover p {
+  opacity: 0.8; /* Reduce opacity of text on hover */
+}
+/* CSS styles */
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.owl-carousel .card {
+  transition: transform 0.3s ease-in-out; /* Add transition for transform property */
+}
+
+.owl-carousel .card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+}

@@ -1,0 +1,41 @@
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: black;
+}
+/* Increase button font size and add some padding */
+.blog-desc button {
+  font-size: 1.2rem; /* Adjust the size as needed */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Add some background color, border, and box shadow to create a fancy decoration */
+.blog-desc button {
+  background-color: #4caf50; /* Green background color */
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition-duration: 0.4s; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+/* Add hover effect */
+.blog-desc button:hover {
+  background-color: #45a049; /* Darker green */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Add transition for transform property */
+}
+
+img:hover {
+  transform: scale(1.05); /* Scale up the image on hover */
+}

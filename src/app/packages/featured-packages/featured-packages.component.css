@@ -1,0 +1,18 @@
+.rb-box-desc p a {
+  text-decoration: none; /* Remove underline from link within <p> tag */
+}
+.rb-box-img img {
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.rb-box {
+  transition: transform 0.3s ease;
+}
+
+.rb-box:hover {
+  transform: translateY(-5px);
+}
+
+.rb-box:hover .rb-box-img img {
+  transform: scale(1.1);
+}

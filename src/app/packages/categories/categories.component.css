@@ -1,0 +1,33 @@
+ul {
+  color: black;
+}
+.card-container {
+  background-color: white;
+  padding: 20px;
+}
+
+.widget.right-widget {
+  color: white; /* Set text color to white */
+}
+
+.widget.right-widget h3.widget-title {
+  color: white; /* Set title color to white */
+}
+
+.widget.right-widget ul {
+  list-style: none;
+  padding: 0;
+}
+
+.widget.right-widget ul li {
+  margin-bottom: 10px;
+}
+
+.widget.right-widget ul li a {
+  color: white; /* Set link color to white */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.widget.right-widget ul li a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}

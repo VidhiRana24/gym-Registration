@@ -1,0 +1,8 @@
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.navbar-nav.mr-auto {
+  margin-left: auto; /* Push items to the right */
+}

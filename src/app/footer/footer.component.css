@@ -1,0 +1,13 @@
+/* Hide underline on links */
+.pmd-footer-nav a {
+  text-decoration: none;
+}
+
+/* Remove list style */
+.pmd-footer-nav {
+  list-style: none;
+}
+.social-icons h1 {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the value as needed */
+}
